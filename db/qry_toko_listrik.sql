@@ -1,5 +1,3 @@
-CREATE DATABASE `toko_listrik`;
-USE `toko_listrik`;
 CREATE TABLE `barang`( 
 	`kode_produk` VARCHAR(15) NOT NULL, 
 	`nama_produk` VARCHAR(30), 
