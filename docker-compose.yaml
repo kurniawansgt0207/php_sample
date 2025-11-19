@@ -6,6 +6,9 @@ services:
       - "8089:80"
     depends_on:
       - database
+    volumes:
+      - .:/php_sample/uploads
+      - uploads_data:/php_sample/uploads
 
   database:
     image: mysql:8.0
@@ -23,3 +26,4 @@ services:
 
 volumes:
   db_data:
+  uploads_data:
