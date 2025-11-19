@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /var/www/html
 
 # Copy source code ke dalam container
-COPY src/ /var/www/html
+COPY ./ /var/www/html
 
 # (Opsional) permission kalau perlu
 RUN chown -R www-data:www-data /var/www/html
