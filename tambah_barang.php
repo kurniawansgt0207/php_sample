@@ -3,6 +3,9 @@
     <body>
         <form name="frmbarang" method="post" action="insert_barang.php">            
             <p>
+		Kode Obat
+	    </P>
+	     <p>
                 Kode Barang:
                 <input type="text" name="kodebrg">
             </p>
