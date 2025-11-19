@@ -1,7 +1,6 @@
 services:
   app:
     build: .
-    tag: v1.0
     container_name: php-contoh
     ports:
       - "8089:80"
