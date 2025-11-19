@@ -7,8 +7,7 @@ services:
     depends_on:
       - database
     volumes:
-      - .:/php_sample/uploads
-      - uploads_data:/php_sample/uploads
+      - uploads_data:/var/www/html/uploads
 
   database:
     image: mysql:8.0
