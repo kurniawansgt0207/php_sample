@@ -4,22 +4,17 @@ services:
     container_name: php-sample
     ports:
       - "8089:80"
-    environment:
-      DB_HOST: root
-      DB_NAME: toko_listrik
-      DB_USER: root
-      DB_PASS: change_me
     depends_on:
-      - db
+      - database
 
-  db:
+  database:
     image: mysql:8.0
     container_name: php-mysql-sample
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: change_me
       MYSQL_DATABASE: toko_listrik
-      MYSQL_USER: root
-      MYSQL_PASSWORD: change_me
+      MYSQL_USER: teddy
+      MYSQL_PASSWORD: teddy123
     ports:
       - "3100:3306"
     volumes:
