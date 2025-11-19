@@ -1,7 +1,8 @@
 services:
   app:
     build: .
-    container_name: php-sample
+    tag: v1.0
+    container_name: php-contoh
     ports:
       - "8089:80"
     depends_on:
@@ -11,7 +12,7 @@ services:
 
   database:
     image: mysql:8.0
-    container_name: php-mysql-sample
+    container_name: php-mysql-contoh
     environment:
       MYSQL_ROOT_PASSWORD: change_me
       MYSQL_DATABASE: toko_listrik
