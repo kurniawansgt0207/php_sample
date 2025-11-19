@@ -12,7 +12,7 @@
     echo "Daftar Master Barang<br>";
     echo "<a href='tambah_barang.php'><button>Tambah Barang</button></a>";
     echo "<br>===========================================";
-    echo "<br>No | Kode Produk | Nama Produk | Harga | Merk | Status";
+    echo "<br>No | Kode Produk | Nama Produk | Harga | Merk | Status | Kolom Tambahan |";
     echo "<br>===========================================";
     echo "<br>";
     $no = 1;
